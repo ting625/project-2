@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The News Olympics</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl navbar-dark bg-transparent m-50">
+                <div class="logo">
+                    <a class="navbar-brand" href="home.html">
+                        <img src="images/logo_the_NEWS.png" alt="The NEWS Logo" width="150">
+                    </a>
+                </div>
+
+                <!-- Hamburger Menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div id="navbarContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">U.S.</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">World</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Business</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Entertainment</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Sports</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Lifestyle</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <hr>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <section id="Olympics">
+            <h2>Olympics Closing Ceremony Lights Up the City of Lights in a Spectacular Farewell</h2>
+            <p>By Jam McCarvel</p>
+            <p>11 August 2024 15:30 <span><b>4 min</b></span></p>
+            <img src="images/news_olympics.png" alt="Olympics" >
+        <div class="blog">
+            <p>From its very start on a memorable evening on the Seine River to its spectacular finish inside the iconic Stade de France, these Olympic Games Paris 2024 were like nothing we've ever seen before.</p>
+            <p>Sunday evening's (11 August) Closing Ceremony marked the end of a return to the City of Light for the first time in 100 years, a glittering farewell steeped in layers of French culture - and an official handover to LA 2028.
+            Newly-minted French icon Leon Marchand, who won four golds in the pool this Games, opened the ceremony under the Olympic cauldron before some 9,000 athletes paraded into the Stade de France, with a programme harkening back to the creation of the modern Games, by Frenchman Pierre de Coubertin.</p>
+            <P>IOC President Thomas Bach praised the athletes' performances for “sparking excitement” around the world, but also nodded to a pivot in the Olympic movement – to “a new era.”
+            “The Olympic Games Paris 2024 were a celebration of the athletes and sport at its best,” Bach said during his speech. “The first Olympic Games delivered fully under our Olympic Agenda reforms: younger, more urban, more inclusive, more sustainable. The first Olympic Games with full gender parity.”</P>
+        </div>
+    </div>
+
+     <!-- Sign Up Banner -->
+     <div class="banner" id="banner">
+        <div class="container">
+            <form action="/contact" method="post" class="row">
+                <fieldset class="col-md-12">
+                    <legend class="legend">Gain access to limited free articles, news alerts, select newsletters,
+                        podcasts, and some daily games.</legend>
+
+                        <div class="row">
+                                <!-- Column 1 -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="johndoe@gmail.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number:</label>
+                                        <input type="text" class="form-control" id="phone" name="phone" placeholder="xxx-xxx-xxxx">
+                                    </div>
+                                </div>
+                                <!-- End Column 1 -->
+                                
+                            <!-- Column 2 -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Name:</label>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="John Doe">
+                                    </div>
+                
+                                    <div class="form-group">
+                                        <label>Preference:</label>
+                                        <br>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" id="world" name="preference" value="world" class="form-check-input">
+                                            <label for="world" class="form-check-label">World</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" id="business" name="preference" value="business"
+                                                class="form-check-input">
+                                            <label for="business" class="form-check-label">Business</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" id="sport" name="preference" value="sport" class="form-check-input">
+                                            <label for="sport" class="form-check-label">Sport</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" id="health" name="preference" value="health" class="form-check-input">
+                                            <label for="health" class="form-check-label">Health</label>
+                                        </div>
+                                        <br>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" id="food" name="preference" value="food" class="form-check-input">
+                                            <label for="food" class="form-check-label">Food</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" id="travel" name="preference" value="travel" class="form-check-input">
+                                            <label for="travel" class="form-check-label">Travel</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" id="tech" name="preference" value="tech" class="form-check-input">
+                                            <label for="tech" class="form-check-label">Tech</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" id="style" name="preference" value="style" class="form-check-input">
+                                            <label for="style" class="form-check-label">Style</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- End Column 2 -->
+                    <div class="form-group col-md-12">
+                        <button type="submit" class="btn">Sign Up</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <!--End banner -->
+
+     <!-- jQuery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ 
+</body>
+</html>
+
+
