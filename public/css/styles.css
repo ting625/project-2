@@ -76,7 +76,7 @@ button.btn a {
 }
 
 .headline {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
 }
 .headline a {
@@ -154,3 +154,28 @@ h2 {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+li {
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+  color: #e20e20;
+  list-style-type: none;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0 auto;
+}
+
+th {
+  padding: 10px;
+  background-color: #BF105C;
+  color: #ffffff;
+}
+
+td {
+  padding:10px 20px;
+}
+
