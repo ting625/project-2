@@ -1,0 +1,77 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title The News
+
+  // Link to CSS
+  link(rel='stylesheet' href='css/styles.css')
+
+  // Bootstrap CSS
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+
+// Header
+header
+  .container
+    nav.navbar.navbar-expand-xl.navbar-dark.bg-transparent.m-50
+      .logo
+        a.navbar-brand(href='home.html')
+          img(src='images/logo_the_NEWS.png' alt='The NEWS Logo' width='150')
+      // Hamburger Menu
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarContent' aria-controls='navbarContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarContent.collapse.navbar-collapse
+        ul.navbar-nav.me-auto.mb-2.mb-lg-0
+          li.nav-item
+            a.nav-link(href='#') U.S.
+          li.nav-item
+            a.nav-link(href='blog.html') World
+          li.nav-item
+            a.nav-link(href='#') Business
+          li.nav-item
+            a.nav-link(href='#') Entertainment
+          li.nav-item
+            a.nav-link(href='blog.html') Sports
+          li.nav-item
+            a.nav-link(href='#') Lifestyle
+hr
+// Main Content
+block content
+
+// Sign Up Banner
+#banner_1.banner_1
+  .container
+    form.row(action='/contact' method='post')
+      fieldset.col-md-12
+        legend.legend
+          | Gain access to limited free articles, news alerts, select newsletters
+          | and podcasts.
+        .row
+          // Column 1
+          .col-md-6
+            .form-group
+              label(for='email') Email:
+              input#email.form-control(type='email' name='email' placeholder='johndoe@gmail.com')
+            .form-group
+              label(for='phone') Phone Number:
+              input#phone.form-control(type='text' name='phone' placeholder='xxx-xxx-xxxx')
+          // End Column 1
+          // Column 2
+          .col-md-6
+            .form-group
+              label(for='name') Name:
+              input#name.form-control(type='text' name='name' placeholder='John Doe')
+            .form-group
+              label(for='preference') Preference:
+              input#preference.form-control(type='text' name='prederence' placeholder='(World, Business, Entertainmnet, Sport, Lifestyle)')
+          // End Column 2
+          .form-group.col-md-12
+            button.btn(type='submit') Sign Up
+// End banner
+// Footer
+footer
+  | @Copyright 2024 The News Media, Inc.
+  // jQuery
+  script(src='https://code.jquery.com/jquery-3.6.0.min.js')
+  // Bootstrap JS
+  script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js')

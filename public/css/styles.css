@@ -1,0 +1,156 @@
+/* Header Area */
+/* Hamburger Menu */
+/* Sign-up Button */
+/* Home Page Main Content */
+/* Footer Area */
+/* Sign Up Banner */
+/* Blog Page Main Content */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Bodoni Moda", serif;
+}
+
+header {
+  width: 100%;
+  min-height: 80px;
+  background-color: #ffffff;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("../images/more.png") !important;
+}
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: #000000;
+}
+.navbar-dark .navbar-nav .show > .nav-link:active {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.container .navbar-dark .navbar-nav .nav-link {
+  color: #000000;
+  padding: 10px;
+}
+.container .navbar-dark .navbar-nav .nav-link:hover {
+  color: #03B1F4;
+  text-decoration: underline;
+}
+.container .navbar-dark .navbar-nav .nav-link:active {
+  text-decoration: none;
+  color: #03B1F4;
+}
+.container .dropdown-toggle::after {
+  display: none !important;
+}
+
+button.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #BF105C;
+  border: 2px solid #bf105c;
+  padding: 0.375rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+button.btn a {
+  color: #ffffff;
+}
+
+.headline {
+  font-weight: 700;
+  font-size: 24px;
+}
+.headline a {
+  color: #000000;
+}
+
+.category {
+  font-weight: 700;
+  font-size: 25px;
+  padding-bottom: 10px;
+  color: #BF105C;
+}
+
+.blog_time {
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.opinion {
+  padding-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+
+.banner {
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #dedede;
+  display: block;
+}
+
+.banner_1 {
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #dedede;
+  display: block;
+}
+
+div.banner {
+  z-index: 1;
+  position: sticky;
+  bottom: 0;
+}
+
+.legend {
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+#Olympics {
+  text-align: center;
+}
+
+h2 {
+  padding: 10px 40px;
+}
+
+.blog {
+  text-align: left;
+  padding: 10px 40px;
+}
+
+@media (min-width: 1200px) {
+  .container .navbar-expand-xl .navbar-nav .nav-link {
+    padding-right: 3rem;
+    padding-left: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
