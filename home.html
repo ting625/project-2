@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
 </head>
 
 <body>
@@ -42,10 +40,6 @@
                         <li class="nav-item"><a class="nav-link" href="blog.html">Sports</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Lifestyle</a></li>
                     </ul>
-                </div>
-
-                <div class="form-group col-md-12">
-                    <button type="submit" class="btn"><a href="#banner_1">Free Article</a></button>
                 </div>
             </nav>
         </div>
@@ -148,13 +142,14 @@
         <!-- Opinion -->
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center p-20">
-                <div class="col-2">
+                <div class="col-4">
                     <div class="category">OPINION</div>
                     <br>
                     <img src="images/man.png" alt="Opinion 1" class="img-fluid mx-auto m-5 d-block">
                 </div>
 
-                <div class="col-6">
+                <div class="col-4">
+                    <br>
                     <div class="headline">Birds Are Not Real</div>
                     <br>
                     <div class="blog_content">
@@ -171,11 +166,12 @@
 
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center p-20">
-                <div class="col-2">
+                <div class="col-4">
                     <img src="images/man.png" alt="Opinion 2" class="img-fluid mx-auto m-5 d-block">
                 </div>
 
-                <div class="col-6">
+                <div class="col-4">
+                    <br>
                     <div class="headline">How I Use AI to Create Cat Videos</div>
                     <br>
                     <div class="blog_content">
@@ -189,18 +185,13 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        @Copyright 2024 The News Media, Inc.
-    </footer>
-
     <!-- Sign Up Banner -->
     <div class="banner_1" id="banner_1">
         <div class="container">
             <form action="/contact" method="post" class="row">
                 <fieldset class="col-md-12">
-                    <legend class="legend">Gain access to limited free articles, news alerts, select newsletters,
-                        podcasts, and some daily games.</legend>
+                    <legend class="legend">Gain access to limited free articles, news alerts, select newsletters
+                        and podcasts.</legend>
 
                         <div class="row">
                                 <!-- Column 1 -->
@@ -223,7 +214,11 @@
                                         <label for="name">Name:</label>
                                         <input type="text" class="form-control" id="name" name="name" placeholder="John Doe">
                                     </div>
-                
+                                    <div class="form-group">
+                                        <label for="preference">Preference:</label>
+                                        <input type="text" class="form-control" id="preference" name="prederence" placeholder="(World, Business, Entertainmnet, Sport, Lifestyle)">
+                                    </div>
+                            <!--Selections
                                     <div class="form-group">
                                         <label>Preference:</label>
                                         <br>
@@ -262,18 +257,23 @@
                                             <label for="style" class="form-check-label">Style</label>
                                         </div>
                                     </div>
+                                    -->
                                 </div>
                                 <!-- End Column 2 -->
-                            </div>
-
-                    <div class="form-group col-md-12">
-                        <button type="submit" class="btn">Sign Up</button>
-                    </div>
+                        
+                            <div class="form-group col-md-12">
+                            <button type="submit" class="btn">Sign Up</button>
+                        </div>
                 </fieldset>
             </form>
         </div>
     </div>
     <!--End banner -->
+
+    <!-- Footer -->
+    <footer>
+    @Copyright 2024 The News Media, Inc.
+    </foter>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
