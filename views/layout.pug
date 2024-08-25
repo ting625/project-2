@@ -15,7 +15,7 @@ header
   .container
     nav.navbar.navbar-expand-xl.navbar-dark.bg-transparent.m-50
       .logo
-        a.navbar-brand(href='home.html')
+        a.navbar-brand(href='/')
           img(src='images/logo_the_NEWS.png' alt='The NEWS Logo' width='150')
       // Hamburger Menu
       button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarContent' aria-controls='navbarContent' aria-expanded='false' aria-label='Toggle navigation')
@@ -25,13 +25,13 @@ header
           li.nav-item
             a.nav-link(href='#') U.S.
           li.nav-item
-            a.nav-link(href='blog.html') World
+            a.nav-link(href='/blog') World
           li.nav-item
             a.nav-link(href='#') Business
           li.nav-item
             a.nav-link(href='#') Entertainment
           li.nav-item
-            a.nav-link(href='blog.html') Sports
+            a.nav-link(href='/blog') Sports
           li.nav-item
             a.nav-link(href='#') Lifestyle
 hr
@@ -41,7 +41,8 @@ block content
 // Sign Up Banner
 #banner_1.banner_1
   .container
-    form.row(action='/contact' method='post')
+
+    form.row(action='.' method='post')
       fieldset.col-md-12
         legend.legend
           | Gain access to limited free articles, news alerts, select newsletters
@@ -63,7 +64,7 @@ block content
               input#name.form-control(type='text' name='name' placeholder='John Doe')
             .form-group
               label(for='preference') Preference:
-              input#preference.form-control(type='text' name='prederence' placeholder='(World, Business, Entertainmnet, Sport, Lifestyle)')
+              input#preference.form-control(type='text' name='preference' placeholder='(World, Business, Entertainmnet, Sport, Lifestyle)')
           // End Column 2
           .form-group.col-md-12
             button.btn(type='submit') Sign Up

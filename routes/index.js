@@ -14,15 +14,14 @@ const bcrypt = require('bcrypt');
 
 router.get('/', (req, res) => {
   //res.send('It works!');
-  res.render('home', { title: 'Index page' });
+  res.render('home', { title: 'Home page' });
 });
 
 router.get('/blog', (req, res) => {
   //res.send('It works!');
-  res.render('blog', { title: 'Registration form' });
+  res.render('blog', { title: 'Blog page' });
 });
 
-/*
 router.get('/registrants', basic.check((req, res) => {
   Registration.find()
     .then((registrations) => {
@@ -34,38 +33,47 @@ router.get('/registrants', basic.check((req, res) => {
 }));
 
 // For debugging only, can be commented later
+router.get('/error_msg', (req, res) => {
+  //res.send('It works!');
+  res.render('error_msg', { title: 'Error message page' });
+});
+
+// For debugging only, can be commented later
 router.get('/thankyou', (req, res) => {
   //res.send('It works!');
   res.render('thankyou', { title: 'Thank you page' });
 });
-*/
 
-/*
+
 router.post('/', 
     [
-        check('name')
-        .isLength({ min: 1 })
-        .withMessage('! Error: Please enter a name'),
         check('email')
         .isLength({ min: 1 })
         .withMessage('! Error: Please enter an email'),
-        check('username')
+
+        check('phone')
         .isLength({ min: 1 })
-        .withMessage('! Error: Please enter a username'),
-        check('password')
+        .withMessage('! Error: Please enter a phone'),
+
+        check('name')
         .isLength({ min: 1 })
-        .withMessage('! Error: Please enter a password'),
+        .withMessage('! Error: Please enter a name'),
+
+        check('preference')
+        .isLength({ min: 1 })
+        .withMessage('! Error: Please enter a preference'),
     ],
+
     async (req, res) => {
-        //console.log(req.body);
+        console.log(req.body);
         const errors = validationResult(req);
         if (errors.isEmpty()) {
           const registration = new Registration(req.body);
 
           // generate salt to hash password
-          const salt = await bcrypt.genSalt(10);
+          // const salt = await bcrypt.genSalt(10);
           // set user password to hashed password
-          registration.password = await bcrypt.hash(registration.password, salt);
+          // registration.password = await bcrypt.hash(registration.password, salt);
           
           registration.save()
 
@@ -79,13 +87,13 @@ router.post('/',
             });
 
         } else {
-            res.render('register', { 
-                title: 'Registration form',
+            res.render('error_msg', { 
+                title: 'Error message page',
                 errors: errors.array(),
                 data: req.body,
              });
         }
     });
-    */
+    
 
 module.exports = router;

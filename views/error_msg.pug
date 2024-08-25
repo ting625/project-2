@@ -1,0 +1,8 @@
+extends layout
+
+block content
+
+    if errors
+      ul#errors
+      for error in errors
+        li= error.msg
