@@ -152,15 +152,13 @@ h2 {
     padding-left: 0.5rem;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
-
 li {
   text-align: -webkit-match-parent;
   unicode-bidi: isolate;
-  color: #e20e20;
+  color: #BF105C;
   list-style-type: none;
   text-align: center;
+  font-weight: 600;
 }
 
 table {
@@ -176,6 +174,7 @@ th {
 }
 
 td {
-  padding:10px 20px;
+  padding: 10px 20px;
 }
 
+/*# sourceMappingURL=styles.css.map */

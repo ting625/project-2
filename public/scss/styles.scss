@@ -30,7 +30,7 @@ header {
 }
 .navbar-dark {
 	.navbar-toggler-icon {
-		background-image: url("images/more.png") !important;
+		background-image: url("../images/more.png") !important;
 	}
 	.navbar-nav {
 		.show {
@@ -93,7 +93,7 @@ button.btn {
 	}
 }
 .headline {
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 24px;
 	a {
 		color: $color_1;
@@ -162,4 +162,26 @@ h2 {
 			}
 		}
 	}
+}
+
+li {
+	text-align: -webkit-match-parent;
+	unicode-bidi: isolate;
+	color: $color_5;
+	list-style-type: none;
+	text-align: center;
+	font-weight: 600;
+}
+table {
+	border-collapse: collapse;
+	text-align: center;
+	margin: 0 auto;
+}
+th {
+	padding: 10px;
+	background-color: $background-color_3;
+	color: $color_4;
+}
+td {
+	padding: 10px 20px;
 }
